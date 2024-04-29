@@ -1,0 +1,290 @@
+/* Body avec background */
+body {
+  background-color: #528796;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Couleur de la navbar */
+#monNav {
+  background-color: #528796 !important;
+}
+
+/* Sélection des éléments avec les IDs et définition de la couleur et de la taille du texte */
+#monNav a.navbar-brand,
+#monNav .navbar-nav .nav-link {
+  color: white; /* Couleur du texte */
+  font-size: 1.2em; /* Taille du texte */
+}
+
+/* Espacement entre les éléments de la barre de navigation */
+#monNav .navbar-nav .nav-link {
+  margin: auto 5%; /* Espacement entre les liens */
+}
+
+/* Début du style sur presentation */
+#presentetphoto {
+  max-width: 80%;
+  margin: 5% auto;
+  padding: 3%;
+  background-color: #355B6B;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center; /* Centre le contenu verticalement */
+}
+
+#presentetphoto img {
+  width: 80%; 
+  padding: 2%; /* Espacement entre l'image et le texte */
+}
+
+#presentetphoto div {
+  flex: 1; /* Permet au texte de prendre tout l'espace disponible */
+}
+
+#presentetphoto h1 {
+  font-size: 35px; /* Taille de la police pour le titre */
+  color: white;
+}
+
+#presentetphoto p {
+  font-size: 22px;
+  line-height: 1.5;
+  color: white;
+}
+/* Fin du style sur présentation */
+
+/* Début du style sur compétences */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1% auto;
+}
+
+.box {
+  color: white;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  margin: 1%;
+  background-color: #355B6B; /* Ajout de la couleur de fond */
+  border-radius: 8px;
+}
+
+.box_comp {
+  color: white;
+  flex: 0 1 31.3%;
+  padding: 7%;
+  text-align: center;
+  position: relative;
+  margin: 1%;
+  background-color: #355B6B; /* Ajout de la couleur de fond */
+  border-radius: 8px;
+}
+
+#Titre {
+  padding: 1%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #355B6B;
+  border-radius: 8px;
+  width: 89.5%;
+}
+
+#Rstudio {
+  padding-top: 5%;
+}
+
+#sas2 {
+  padding-top: 4%;
+}
+
+#sql2 {
+  padding: 10%;
+  margin-left: 15% !important;
+}
+
+.box img {
+  max-width: 80%;
+  max-height: 100%;
+  display: block;
+  margin: 2% auto;
+}
+
+.overlay {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  padding-left: 5%;
+  padding-top: 9%;
+  text-align: left;
+  background-color: #355B6B;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-contact{
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  padding-top: 5%;
+  text-align: center;
+  background-color: #355B6B;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-comp{
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  padding: 5%;
+  padding-left: 10%;
+  text-align: left;
+  background-color: #355B6B;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover .overlay-contact{
+  opacity: 1;
+}
+
+.box_comp:hover .overlay-comp{
+  opacity: 1;
+}
+
+.box:hover .overlay{
+  opacity: 1;
+}
+/* Fin du style sur compétences */
+
+/* Projets */
+#main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 85%;
+  margin: 1% auto;
+}
+
+.project {
+  flex: 0 1 49%;
+  max-width: 100%;
+  background-color: #355B6B;
+  border-radius: 8px;
+  padding: 3%;
+  display: flex;
+  align-items: center; /* Centre le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  height: 10em;
+  margin: 0.5% 0.5%; 
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-details {
+  display: none;
+}
+
+.project-details:target {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-bubble {
+  background-color: #355B6B;
+  border-radius: 8px;
+  max-width: 85%;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 3%;
+}
+
+h1, h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.project-description {
+  display: inline-block;
+	color: white;
+	width : 48%;
+  flex: 1;
+  margin: 5px;
+}
+
+.project-description3 {
+  display: block;
+	color: white;
+	width : 80;
+  flex: 1;
+  margin: 5px;
+}
+	
+.projet-preuve{
+  flex: 1;
+  width: 40%;
+  margin: 5px;
+  float: right;
+  margin-right: 5%;
+}
+
+.collect{
+  display: flex;
+  margin-bottom: 3%;
+  width: 80px;
+  height: 180px;
+}
+
+
+.preuve{
+  display: block;
+  width: 80%;
+  height: 80%;
+  background-color: red;
+}
+
+.skills-list {
+  margin-left: 15px;
+}
+
+.skills-title {
+  color: white;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.skills-list li {
+  transition: color 0.0001s ease-in-out;
+}
+
+.skills-list li:hover {
+  color: #528796;
+}
+/* Contacts */
+.image-small {
+  width: 50px; /* Ajustez la largeur comme nécessaire */
+  height: auto;
+}
+
